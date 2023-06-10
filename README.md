@@ -17,17 +17,23 @@ Cleaning the "Category" column: The "Category" column is analyzed to identify ca
 
 I explored different aspects of the dataset and here are few of my observations:
 
-✅Total number of restaurants in each city:
-A bar chart or a count plot is created to display the total number of restaurants in each city.The cities are represented on the x-axis, and the corresponding count of restaurants is shown on the y-axis.
+✅Visualizing Total Resturants in Cities
+The provided code creates a bar plot using Seaborn's countplot() function to visualize the total number of restaurants in each city. The figure size is adjusted to make the plot larger, the x-axis tick labels are rotated for better readability, and a title is added to describe the purpose of the plot.
 
-✅ Food delivery availability:
-A bar chart is generated to illustrate the availability of food delivery in different cities. The chart shows the proportion or count of restaurants offering food delivery and those that do not. The slices or bars are labeled to indicate the percentage or count of restaurants falling into each category.
+✅Visualizing Food Delivery
+he code creates a bar plot using Seaborn's countplot() function to visualize the availability of food delivery. It counts the occurrences of 0 (indicating food delivery not available) and 1 (indicating food delivery is available) and represents them as bars in the plot. The figure size is adjusted to 5 inches by 5 inches.
 
-✅Restaurant type (veg or non-veg):
-A bar chart is used to depict the distribution of restaurant types, i.e., vegetarian or non-vegetarian. The chart showcases the proportion or count of veg and non-veg restaurants in the dataset. Labels are added to each slice or bar to indicate the percentage or count of restaurants belonging to each type.
+✅Visualizing Restaurant type (Veg or Nonveg)
+The output of this code is a bar plot that visualizes the restaurant types (veg or non-veg) based on the values in the 'Veg' column. The figure size is adjusted to 5 inches by 5 inches, and the color palette used for the bars is 'rainbow'. The title of the plot is set to 'Restaurant Type'.
 
-✅Relationship between food delivery and rating:
-A line plot is employed to explore the relationship between food delivery and restaurant ratings. The x-axis represents the food delivery availability, while the y-axis represents the restaurant ratings. Each data point on the plot represents a restaurant, and its position signifies the rating and delivery status.
+✅Visualizing Food Delivery VS Rating
+The output of this code is a box plot that compares the distribution of ratings for different categories of food delivery availability. The figure size is adjusted to 5 inches by 5 inches. The x-axis represents the food delivery availability (0 for not available, 1 for available), and the y-axis represents the ratings. The plot shows the median, quartiles, and possible outliers for each category of food delivery availability. The title of the plot is set to 'Food Delivery vs Rating'.
 
-✅City-wise ratings of restaurants:
-A box plot or a violin plot is utilized to visualize the distribution of restaurant ratings across different cities. Each city is represented on the x-axis, while the y-axis denotes the rating values. The plot displays the median, quartiles, and potential outliers, offering insights into the rating distribution for each city.
+✅Visualizing City wise Ratings of Restro
+The output of this code is a bar plot that shows the average ratings of restaurants in different cities. The figure size is adjusted to 16 inches by 8 inches. The x-axis represents the cities, and the y-axis represents the ratings. Each bar represents the average rating for a specific city. The x-axis tick labels are rotated by 90 degrees to improve readability when there are many cities.
+
+✅Cities with Highest Rated Resturants
+The output of this code is a bar plot that displays the mean ratings of the top 10 cities with the highest ratings. The figure size is adjusted to 8 inches by 6 inches. The x-axis represents the cities, and the y-axis represents the mean ratings. Each bar represents the mean rating for a specific city. The x-axis tick labels are rotated by 90 degrees to improve readability when there are many cities.
+
+✅Visualizing long Distance Delivery Facility, City wise
+The output of this code is a pivot table named df, where the 'city' column serves as the index, and the 'Delivery' values ('0' or '1') are used as columns. Each cell in the pivot table represents the count of restaurants in a specific city and whether they offer long-distance delivery or not. If a city doesn't have any restaurants with a particular delivery option, the corresponding cell value will be 0.
